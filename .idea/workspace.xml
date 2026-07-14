@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="672abd06-07ef-4069-9be1-401d4ad18a12" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6,
+  &quot;fromUser&quot;: false
+}</component>
+  <component name="ProjectId" id="3EDu4RjJ23hL5ZXUqFWNuNsDn8H" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;JUnit.DeviceAssignmentServiceTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.MqttSyncPublisherTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ThresholdEvaluationServiceTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ZoneControllerTest.executor&quot;: &quot;Run&quot;,
+    &quot;Maven.backend [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.backend [package].executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;Spring Boot.CluckNetBackendApplication.executor&quot;: &quot;Run&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/run/media/rinos/Data/3YP/antigravity/backend/src/main/resources&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.updates&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
+    ]
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources" />
+      <recent name="$PROJECT_DIR$/src/main/resources/certs" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.DeviceAssignmentServiceTest">
+    <configuration name="DeviceAssignmentServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="backend" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.clucknet.backend.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.clucknet.backend.service" />
+      <option name="MAIN_CLASS_NAME" value="com.clucknet.backend.service.DeviceAssignmentServiceTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MqttSyncPublisherTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="backend" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.clucknet.backend.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.clucknet.backend.service" />
+      <option name="MAIN_CLASS_NAME" value="com.clucknet.backend.service.MqttSyncPublisherTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ThresholdEvaluationServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="backend" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.clucknet.backend.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.clucknet.backend.service" />
+      <option name="MAIN_CLASS_NAME" value="com.clucknet.backend.service.ThresholdEvaluationServiceTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ZoneControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="backend" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.clucknet.backend.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.clucknet.backend.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.clucknet.backend.controller.ZoneControllerTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CluckNetBackendApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="backend" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.clucknet.backend.CluckNetBackendApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.DeviceAssignmentServiceTest" />
+        <item itemvalue="JUnit.MqttSyncPublisherTest" />
+        <item itemvalue="JUnit.ZoneControllerTest" />
+        <item itemvalue="JUnit.ThresholdEvaluationServiceTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-30f59d01ecdd-37e91769500f-intellij.indexing.shared.core-IU-261.26222.65" />
+        <option value="bundled-js-predefined-d6986cc7102b-31caf2ab9e3c-JavaScript-IU-261.26222.65" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="672abd06-07ef-4069-9be1-401d4ad18a12" name="Changes" comment="" />
+      <created>1779725271783</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1779725271783</updated>
+      <workItem from="1779725275436" duration="619000" />
+      <workItem from="1780416682141" duration="10000" />
+      <workItem from="1780735372098" duration="8417000" />
+      <workItem from="1780763596391" duration="2438000" />
+      <workItem from="1780775502166" duration="1731000" />
+      <workItem from="1780810819091" duration="3078000" />
+      <workItem from="1780824409213" duration="1562000" />
+      <workItem from="1780826720111" duration="1169000" />
+      <workItem from="1780829095703" duration="958000" />
+      <workItem from="1780834051507" duration="640000" />
+      <workItem from="1780842206903" duration="1114000" />
+      <workItem from="1780845044061" duration="917000" />
+      <workItem from="1780848735109" duration="1820000" />
+      <workItem from="1780850690097" duration="1605000" />
+      <workItem from="1780852359475" duration="1058000" />
+      <workItem from="1780855943156" duration="605000" />
+      <workItem from="1780857662806" duration="767000" />
+      <workItem from="1780858498686" duration="877000" />
+      <workItem from="1780860902043" duration="1058000" />
+      <workItem from="1780862000829" duration="1033000" />
+      <workItem from="1780863565839" duration="8000" />
+      <workItem from="1780863595195" duration="856000" />
+      <workItem from="1780864486982" duration="1825000" />
+      <workItem from="1780866361542" duration="1249000" />
+      <workItem from="1780869951437" duration="762000" />
+      <workItem from="1780879113407" duration="381000" />
+      <workItem from="1780895375230" duration="2903000" />
+      <workItem from="1781011993015" duration="319000" />
+      <workItem from="1781069286724" duration="8241000" />
+      <workItem from="1781087913017" duration="378000" />
+      <workItem from="1781105379767" duration="10504000" />
+      <workItem from="1781120426224" duration="4219000" />
+      <workItem from="1781124700754" duration="558000" />
+      <workItem from="1781126474756" duration="742000" />
+      <workItem from="1781160181215" duration="2010000" />
+      <workItem from="1781173674440" duration="1595000" />
+      <workItem from="1781175703812" duration="11527000" />
+      <workItem from="1781197735655" duration="4381000" />
+      <workItem from="1781203182819" duration="2612000" />
+      <workItem from="1781209139537" duration="6488000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

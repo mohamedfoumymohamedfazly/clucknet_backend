@@ -1,0 +1,6 @@
+/run/media/rinos/Data/3YP/antigravity/backend/src/test/java/com/clucknet/backend/service/TelemetryProcessingServiceTest.java
+/run/media/rinos/Data/3YP/antigravity/backend/src/test/java/com/clucknet/backend/service/ThresholdEvaluationServiceTest.java
+/run/media/rinos/Data/3YP/antigravity/backend/src/test/java/com/clucknet/backend/service/MqttSyncPublisherTest.java
+/run/media/rinos/Data/3YP/antigravity/backend/src/test/java/com/clucknet/backend/service/ThresholdServiceTest.java
+/run/media/rinos/Data/3YP/antigravity/backend/src/test/java/com/clucknet/backend/controller/ZoneControllerTest.java
+/run/media/rinos/Data/3YP/antigravity/backend/src/test/java/com/clucknet/backend/service/DeviceAssignmentServiceTest.java

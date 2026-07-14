@@ -1,0 +1,100 @@
+version: '3.8'
+
+services:
+  # ==========================================
+  # Relational Database: MySQL 8
+  # ==========================================
+  mysql:
+    image: mysql:8.0
+    container_name: clucknet-mysql
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: rootpassword
+      MYSQL_DATABASE: clucknet
+      MYSQL_USER: cluckuser
+      MYSQL_PASSWORD: cluckpass
+    ports:
+      - "3306:3306"
+    volumes:
+      - mysql_data:/var/lib/mysql
+    networks:
+      - clucknet-network
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost", "-u", "cluckuser", "-pcluckpass"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  # ==========================================
+  # Time-Series Database: InfluxDB 2.7
+  # ==========================================
+  influxdb:
+    image: influxdb:2.7-alpine
+    container_name: clucknet-influxdb
+    restart: always
+    environment:
+      DOCKER_INFLUXDB_INIT_MODE: setup
+      DOCKER_INFLUXDB_INIT_USERNAME: admin
+      DOCKER_INFLUXDB_INIT_PASSWORD: cluckadminpass
+      DOCKER_INFLUXDB_INIT_ORG: cluckorg
+      DOCKER_INFLUXDB_INIT_BUCKET: telemetry
+      DOCKER_INFLUXDB_INIT_ADMIN_TOKEN: clucksecrettoken1234567890abcdef
+    ports:
+      - "8086:8086"
+    volumes:
+      - influxdb_data:/var/lib/influxdb2
+    networks:
+      - clucknet-network
+    healthcheck:
+      test: ["CMD", "influx", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  # ==========================================
+  # Core REST Application: Spring Boot Backend
+  # ==========================================
+  backend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: clucknet-backend
+    restart: always
+    ports:
+      - "8080:8080"
+    environment:
+      # MySQL Connection Bindings
+      - SPRING_DATASOURCE_URL=jdbc:mysql://mysql:3306/clucknet?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC&connectionTimeZone=UTC
+      - SPRING_DATASOURCE_USERNAME=cluckuser
+      - SPRING_DATASOURCE_PASSWORD=cluckpass
+      
+      # InfluxDB Time-Series Bindings
+      - INFLUXDB_URL=http://influxdb:8086
+      - INFLUXDB_TOKEN=clucksecrettoken1234567890abcdef
+      - INFLUXDB_ORG=cluckorg
+      - INFLUXDB_BUCKET=telemetry
+      
+      # AWS IoT Core MQTT Fallbacks (Can be overridden by system environment during run)
+      - AWS_IOT_MQTT_BROKER_URL=tcp://localhost:1883
+      - AWS_IOT_MQTT_CLIENT_ID=clucknet-backend-docker
+      - AWS_IOT_MQTT_SSL_ENABLED=false
+    depends_on:
+      mysql:
+        condition: service_healthy
+      influxdb:
+        condition: service_healthy
+    networks:
+      - clucknet-network
+
+# ==========================================
+# Network and Volume Declarations
+# ==========================================
+volumes:
+  mysql_data:
+    driver: local
+  influxdb_data:
+    driver: local
+
+networks:
+  clucknet-network:
+    driver: bridge

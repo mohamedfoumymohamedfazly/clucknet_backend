@@ -1,0 +1,6 @@
+com/clucknet/backend/service/ThresholdServiceTest.class
+com/clucknet/backend/service/MqttSyncPublisherTest.class
+com/clucknet/backend/service/ThresholdEvaluationServiceTest.class
+com/clucknet/backend/controller/ZoneControllerTest.class
+com/clucknet/backend/service/TelemetryProcessingServiceTest.class
+com/clucknet/backend/service/DeviceAssignmentServiceTest.class

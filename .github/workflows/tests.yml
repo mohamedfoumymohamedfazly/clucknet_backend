@@ -1,0 +1,34 @@
+name: Spring Boot Tests
+
+on:
+  push:
+    branches:
+      - main
+
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  test:
+
+    runs-on: ubuntu-latest
+
+    steps:
+
+      - name: Download Project
+        uses: actions/checkout@v4
+
+      - name: Install Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '21'
+
+      - name: Give permission to Maven Wrapper
+        run: chmod +x mvnw
+        continue-on-error: true
+
+      - name: Run Tests
+        run: mvn test
+        
